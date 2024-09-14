@@ -34,14 +34,6 @@ public class StrategyTest {
         log.info("测试结果：{}", success);
     }
 
-    /**
-     * 从装配的策略中随机获取奖品ID值
-     */
-    @Test
-    public void test_getAssembleRandomVal() {
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(100001L));
-    }
-
     @Resource
     private IRedisService redisService;
 
